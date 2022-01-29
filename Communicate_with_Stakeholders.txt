@@ -1,0 +1,21 @@
+Hey Everyone,
+
+I hope everything is going well for you. I recently completed work on the fetch reward analytics coding project, which consisted of three datasets: Receipts, Brands, and Users. The issue required you to navigate through the unstructured JSON dataset and complete the following tasks: 
+	- Make a dataset that is well-structured. 
+	- Draw a new structured relational data model. 
+	- Create a few queries to address a business stakeholder's question. 
+	- Look for problems with data quality.
+
+I'd want to speak about my method as well as a few data quality issues I discovered. The steps are as follows: 
+	- I used Python to import all three datasets into a pandas dataframe. 
+	- At first, I simply walked over the information several times to grasp the relationships between different columns and tables without considering the cleaning procedure. 
+	- After cleaning and structuring a dataset and utilizing SQL to answer all of a business stakeholder's questions. I have a few questions that will assist me in better understanding the data and answering future requests.
+
+My questions are as follows: 
+	- I discovered duplicate records in numerous tables for columns that I assume should be unique. The Users table, for example, has duplicate entries. - The Brands table's brandCode column contained duplicate data, and it was missing numerous brands that were present in the Receipt table's brandCode column. As a result, we'll be missing information and won't be able to respond to the query concerning those brands. 
+	- The column 'rewardReceiptItemList' in the receipts database has duplicate information as well as numerous information. More assistance is required in order to comprehend the data, as extending certain items causes duplicate entries in other columns. (In particular, _id, which must be unique)
+
+I'd be happy to chat more about this and to answer any questions you may have in the future.
+
+Thank you,
+Praveen 
